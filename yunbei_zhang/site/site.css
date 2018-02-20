@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image:url("background.jpeg");
+    text-align:center;
+    height: auto; 
+    margin: auto;
+    width: 75%;
+    padding-bottom: 10px;
+}
+
+
+#bandeau {
+    background:rgb(248, 236, 236);
+    opacity:0.4;
+    height:140px;
+    
+}
+
+#bandeau h1 {
+    margin:20px;
+    color: #ffff00;
+    font-family:Impact, fantasy, cursive; 
+    font-size:300%;
+    text-shadow: 3px -3px black, 2px 2px black;
+}
+
+#menu {
+    display: block;
+    margin:20px auto;
+    color: #FFF;
+    background: transparent url(transparent.png);
+    font-family:Chalkduster, fantasy;
+    font-size:18px;
+    height:60px;    
+    line-height: 50px;
+	padding-left: 10px;	
+}
+      
+#menu ul li {
+    display:inline; 
+    list-style-type:none;
+    color: #fafafa;
+    letter-spacing: 0;
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135; 
+}
+
+#content {
+    text-align: justify;
+    margin: 1px 0 ;
+    font-size: 120%;
+    padding: 0 15px 20px 0;
+    padding:10px 20px 50px 20px;
+    background: transparent url(transparent.png);
+    height:300%;
+
+}
+
+#pied {
+	background:rgb(248, 236, 236);
+    background-size: auto;
+    opacity:0.4;
+	line-height: 50px;
+	text-align:center;
+	padding-left: 10px;
+	color: #262626;
+	font-family:Impact;
+	bottom: -130%;
+	width: 74%;
+	height: auto;
+	margin: auto;
+	position: fixed;
+    bottom:0;
+    
+}
+
+
+h2 {
+    color: red;
+    font-family: 'Marker Felt','News Cycle', arial;
+    font-size:135%;
+    text-align:center;
+    text-shadow: #000 1px 1px;
+    margin: 6% 2% 1% 2%;
+}
+
+h3, p {
+    color:#DDD;
+    font-family: 'News Cycle', arial;
+
+    text-shadow: #000 1px 1px;
+    margin: 0% 2% 0 2%;
+    padding: 0 0 20px 0;
+    line-height: 1.7em;
+}
+
+#content h3{
+    color:#8c8c8c;
+}
+ 
+/*css pour les formulaires*/
+fieldset{
+    font-family: Didot;
+    float:none;
+    width:90%;
+    margin: 0 auto;
+    border:3px solid #B5B8C8;
+    padding:10px;
+    margin-bottom:10px;
+    display:block;
+    border-color:#595959; 
+}
+
+legend{
+    font-family:'Snell Roundhand', cursive;
+    font-size:150%;
+    color:#DDD;
+    text-shadow: #000 1px 1px;
+    margin: 0 0 0 22%;
+    padding: 0 2px 2px 2px;
+    line-height: 1.7em;
+}
+textarea, input[type=text]{
+    padding: 18px;
+    border: 5px solid #B1DDEC;
+    margin: 0 auto auto 10%;
+    box-sizing: border-box;
+    color: #404040;
+    font-family: 'Marker Felt', arial;
+    font-size: 18px;
+    background: #d0d0e1;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+select {
+    font-family: Didot,'Marker Felt', arial;
+    font-size: 12px;
+    padding: 3px;
+    margin: 0 1% 2% 22%;
+    background-color: #d0d0e1;
+}
+
+input[type=submit]{
+     font-family: 'Marker Felt','News Cycle', arial;
+     font-size: 14px;
+     padding: 4px; 
+     color:gray;
+     margin : 0 1% 2% auto;
+     background-color: #f2f2f2;
+}
+
+label{
+    position:absolute;
+    font-family: 'Marker Felt','News Cycle', arial;
+    font-size:100%;
+    color:#DDD;
+    padding: 0 0 0 2%; 
+    margin: 0.2% auto auto 7%; 
+
+}
+
+input[type=radio]{
+    position:absolute;
+    font-family: 'Marker Felt','News Cycle', arial; 
+    color:#DDD;
+    font-size:100%;           
+    margin: 3px auto auto 80px;
+}
+
+#tout_rechercher, #ajouter, #afficher{
+    text-align:center;
+}
+
+/*paramétriser l'hyperlink*/
+
+a:link {
+       text-decoration: none;
+       color:silver;
+}
+ 
+a:visited {
+    text-decoration: none;
+    color:#262626;
+}
+ 
+a:hover {
+    text-decoration: none;
+    color:#ADD8E6;
+}
+
+a:active { 
+    text-decoration:blink;
+}
+
+/* barre de separateur */
+.separateur {
+    display:inline-block;
+    height:1.2em; 
+    width:0.1em;
+    background-color:grey;
+    margin-left:1.5em; 
+    margin-right:1.5em;
+    margin-top: 0em;
+    margin-bottom: -0.3em;
+        
+}​
+
+

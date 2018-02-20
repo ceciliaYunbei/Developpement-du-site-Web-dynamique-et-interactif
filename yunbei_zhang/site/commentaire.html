@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link href="site.css" type="text/css" rel="stylesheet"/> 
+        <title>Oscars</title>
+        <!-- meta-données -->
+        <meta http-equiv= "content-type" content="text/html; charset=utf-8"/>
+        <meta name="auteur" content="Yunbei"/>
+        <meta name="description" content="projet-xhtml"/>
+        <meta name="keyword" content="xhtml,inalco,projet"/>
+    </head>
+    <body>  
+        <div id="bandeau">
+            <br/><h1>Films ayant obtenu l'Oscar</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="accueil.html">Accueil</a><span class="separateur"/></li>
+                <li><a href="recherche.html">Rechercher un film</a><span class="separateur"/></li>
+                <li><a href="commentaire.html">Ajouter un commentaire</a><span class="separateur"/></li>
+                <li><a href="apropos.html">À propos</a></li>
+            </ul>  
+        </div>
+        <div id="content">
+            <h2>Ajout des commentaires à un film par année Oscars et la visualisation</h2>
+            <br/>
+            <form action="test_projet.php" method="get" id="ajou">
+                <!-- un fieldset inclut 17 select -->
+                <fieldset>
+                    <legend>Ajout d'un commentaire</legend>
+                    <br/>
+                    <!-- choisir d'abord le bouton radio, puis choix du titre de film -->
+                    <input type="radio" name="ajout" value="2016"/><label>2016 : </label>
+                    <!-- name = année Oscar -->
+                    <select name = "2016">
+                        <option value='defaut'> -- </option>
+                        <!-- value = id_film -->
+                        <option value='1'>La La Land</option>
+                        <option value='2'>Moonlight</option>
+                        <option value='3'>Hacksaw Ridge</option>
+                        <option value='4'>Manchester by the Sea</option>
+                        <option value='5'>Arrival</option>
+                        <option value='6'>Fantastic Beasts and Where to Find Them</option>
+                        <option value='7'>Fences</option>
+                        <option value='8'>O.J.: Made in America</option>
+                        <option value='9'>Piper</option>
+                        <option value='10'>Sing</option>
+                        <option value='11'>Suicide Squad</option>
+                        <option value='12'>The Jungle Book</option>
+                        <option value='13'>The Salesman</option>
+                        <option value='14'>The White Helmets</option>
+                        <option value='15'>Zootopia</option>  
+                    </select><br/>
+                    <input type="radio" name="ajout" value="2015"/><label>2015 : </label>
+                    <!-- name = année Oscar -->
+                    <select name = "2015">
+                        <option value='defaut'> -- </option>
+                        <!-- value = id_film -->
+                        <option value='16'>Mad Max: Fury Road</option>
+                        <option value='17'>The Revenant</option>
+                        <option value='18'>Spotlight</option>
+                        <option value='19'>A Girl in the River: The Price of Forgiveness</option>
+                        <option value='20'>Amy</option>
+                        <option value='21'>Bear Story</option>
+                        <option value='22'>Bridge of Spies</option>
+                        <option value='23'>Ex Machina</option>
+                        <option value='24'>Inside Out</option>
+                        <option value='25'>Room</option>
+                        <option value='26'>Son of Saul</option>
+                        <option value='27'>Spectre</option>
+                        <option value='28'>Stutterer</option>
+                        <option value='29'>The Big Short</option>
+                        <option value='30'>The Danish Girl</option>
+                        <option value='31'>The Hateful Eight</option> 
+                    </select><br/>
+                    <input type="radio" name="ajout" value="2014"/><label>2014 : </label>
+                    <!-- name = année Oscar -->
+                    <select name = "2014">
+                        <option value='defaut'> -- </option>
+                        <!-- value = id_film -->
+                        <option value='32'>Birdman</option>
+                        <option value='33'>The Grand Budapest Hotel</option>
+                        <option value='34'>Whiplash</option>
+                        <option value='35'>American Sniper</option>
+                        <option value='36'>Big Hero 6</option>
+                        <option value='37'>Boyhood</option>
+                        <option value='38'>Citizenfour</option>
+                        <option value='39'>Crisis Hotline: Veterans Press 1</option>
+                        <option value='40'>Feast</option>
+                        <option value='41'>Ida</option>
+                        <option value='42'>Interstellar</option>
+                        <option value='43'>Selma</option>
+                        <option value='44'>Still Alice</option>
+                        <option value='45'>The Imitation Game</option>
+                        <option value='46'>The Phone Call</option>
+                        <option value='47'>The Theory of Everything</option>
+                    </select><br/>
+                    <input type="radio" name="ajout" value="2013"/><label>2013 : </label>
+                    <select name = "2013">
+                        <option value='defaut'> -- </option>
+                        <option value='48'>Gravity</option>
+                        <option value='49'>12 Years a Slave</option>
+                        <option value='50'>Dallas Buyers Club</option>
+                        <option value='51'>Frozen</option>
+                        <option value='52'>The Great Gatsby</option>
+                        <option value='53'>20 Feet from Stardom</option>
+                        <option value='54'>Blue Jasmine</option>
+                        <option value='55'>The Great Beauty</option>
+                        <option value='56'>Helium</option>
+                        <option value='57'>Her</option>
+                        <option value='58'>The Lady in Number 6: Music Saved My Life</option>
+                        <option value='59'>Mr Hublot</option>
+                    </select><br/>
+                    <input type="radio" name="ajout" value="2012"/><label>2012 : </label>
+                    <select name = "2012">
+                        <option value='defaut'> -- </option>
+                        <option value='60'>Life of Pi</option>
+                        <option value='61'>Argo</option>
+                        <option value='62'>Les Misérables</option>
+                        <option value='63'>Django Unchained</option>
+                        <option value='64'>Lincoln</option>
+                        <option value='65'>Skyfall</option>
+                        <option value='66'>Amour</option>
+                        <option value='67'>Anna Karenina</option>
+                        <option value='68'>Brave</option>
+                        <option value='69'>Curfew</option>
+                        <option value='70'>Inocente</option>
+                        <option value='71'>Paperman</option>
+                        <option value='72'>Searching for Sugar Man</option>
+                        <option value='73'>Silver Linings Playbook</option>
+                        <option value='74'>Zero Dark Thirty</option>
+                    </select><br/>
+                    <input type="radio" name="ajout" value="2011"/><label>2011 : </label>
+                    <select name = "2011">
+                        <option value='defaut'> -- </option>
+                        <option value='75'>Hugo</option>
+                        <option value='76'>The Artist</option>
+                        <option value='77'>The Iron Lady</option>
+                        <option value='78'>A Separation</option>
+                        <option value='79'>Beginners</option>
+                        <option value='80'>The Fantastic Flying Books of Mr. Morris Lessmore</option>
+                        <option value='81'>The Help</option>
+                        <option value='82'>Midnight in Paris</option>
+                        <option value='83'>Rango</option>
+                        <option value='84'>Saving Face</option>
+                        <option value='85'>The Descendants</option>
+                        <option value='86'>The Girl with the Dragon Tattoo</option>
+                        <option value='87'>The Muppets</option>
+                        <option value='88'>The Shore</option>
+                        <option value='89'>Undefeated</option>
+                    </select><br/>
+                    <input type="radio" name="ajout" value="2010"/><label>2010 : </label>
+                    <select name = "2010">
+                        <option value='defaut'> -- </option>
+                        <option value='90'>Inception</option>
+                        <option value='91'>The King's Speech</option>
+                        <option value='92'>The Social Network</option>
+                        <option value='93'>Alice in Wonderland</option>
+                        <option value='94'>The Fighter</option>
+                        <option value='95'>Toy Story 3</option>
+                        <option value='96'>Black Swan</option>
+                        <option value='97'>God of Love</option>
+                        <option value='98'>In a Better World</option>
+                        <option value='99'>Inside Job</option>
+                        <option value='100'>The Lost Thing</option>
+                        <option value='101'>Strangers No More</option>
+                        <option value='102'>The Wolfman</option> 
+                    </select><br/>
+                    <input type="radio" name="ajout" value="2009"/><label>2009 : </label>
+                    <select name = "2009">
+                        <option value='defaut'> -- </option>
+                        <option value='103'>The Hurt Locker</option>
+                        <option value='104'>Avatar</option>
+                        <option value='105'>Crazy Heart</option>
+                        <option value='106'>Precious</option>
+                        <option value='107'>Up</option>
+                        <option value='108'>The Blind Side</option>
+                        <option value='109'>The Cove</option>
+                        <option value='110'>Inglourious Basterds</option>
+                        <option value='111'>Logorama</option>
+                        <option value='112'>Music by Prudence</option>
+                        <option value='113'>The New Tenants</option>
+                        <option value='114'>The Secret in Their Eyes</option>
+                        <option value='115'>Star Trek</option>
+                        <option value='116'>The Young Victoria</option>
+                    </select><br/>
+                    <input type="radio" name="ajout" value="2008"/><label>2008 : </label>
+                    <select name = "2008">
+                        <option value='defaut'> -- </option>
+                        <option value='117'>Slumdog Millionaire</option>
+                        <option value='118'>The Curious Case of Benjamin Button</option>
+                        <option value='119'>The Dark Knight</option>
+                        <option value='120'>Milk</option>
+                        <option value='121'>Departures</option>
+                        <option value='122'>The Duchess</option>
+                        <option value='123'>The House of Small Cubes (La Maison en Petits Cubes)</option>
+                        <option value='124'>Man on Wire</option>
+                        <option value='125'>The Reader</option>
+                        <option value='126'>Smile Pinki</option>
+                        <option value='127'>Toyland</option>
+                        <option value='128'>Vicky Cristina Barcelona</option>
+                        <option value='129'>WALL-E</option>
+                    </select><br/>
+                    <input type="radio" name="ajout" value="2007"/><label>2007 : </label>
+                    <select name = "2007">
+                        <option value='defaut'> -- </option>
+                        <option value='130'>No Country for Old Men</option>
+                        <option value='131'>The Bourne Ultimatum</option>
+                        <option value='132'>There Will Be Blood</option>
+                        <option value='133'>La Vie en Rose</option>
+                        <option value='134'>Atonement</option>
+                        <option value='135'>The Counterfeiters (Die Fälscher)</option>
+                        <option value='136'>Elizabeth: The Golden Age</option>
+                        <option value='137'>Freeheld</option>
+                        <option value='138'>The Golden Compass</option>
+                        <option value='139'>Juno</option>
+                        <option value='140'>Michael Clayton</option>
+                        <option value='141'>The Mozart of Pickpockets (Le Mozart des Pickpockets)</option>
+                        <option value='142'>Once</option>
+                        <option value='143'>Peter &amp; the Wolf</option>
+                        <option value='144'>Ratatouille</option>
+                        <option value='145'>Sweeney Todd: The Demon Barber of Fleet Street</option>
+                        <option value='146'>Taxi to the Dark Side</option>
+                    </select><br/>
+                    <input type="radio" name="ajout" value="2006"/><label>2006 : </label>
+                    <select name = "2006">
+                        <option value='defaut'> -- </option>
+                        <option value='147'>The Departed</option>
+                        <option value='148'>Pan's Labyrinth (El laberinto del fauno)</option>
+                        <option value='149'>Dreamgirls</option>
+                        <option value='150'>An Inconvenient Truth</option>
+                        <option value='151'>Little Miss Sunshine</option>
+                        <option value='152'>Babel</option>
+                        <option value='153'>The Blood of Yingzhou District</option>
+                        <option value='154'>The Danish Poet</option>
+                        <option value='155'>Happy Feet</option>
+                        <option value='156'>The Last King of Scotland</option>
+                        <option value='157'>Letters from Iwo Jima</option>
+                        <option value='158'>The Lives of Others (Das Leben der Anderen)</option>
+                        <option value='159'>Marie Antoinette</option>
+                        <option value='160'>Pirates of the Caribbean: Dead Mans Chest</option>
+                        <option value='161'>The Queen</option>
+                        <option value='162'>West Bank Story</option>
+                    </select><br/>
+                    <input type="radio" name="ajout" value="2005"/><label>2005 : </label>
+                    <select name = "2005">
+                        <option value='defaut'> -- </option>
+                        <option value='163'>Brokeback Mountain</option>
+                        <option value='164'>Crash</option>
+                        <option value='165'>King Kong</option>
+                        <option value='166'>Memoirs of a Geisha</option>
+                        <option value='167'>Capote</option>
+                        <option value='168'>The Chronicles of Narnia: The Lion, the Witch and the Wardrobe</option>
+                        <option value='169'>The Constant Gardener</option>
+                        <option value='170'>Hustle &amp; Flow</option>
+                        <option value='171'>March of the Penguins (La Marche de l'empereur)</option>
+                        <option value='172'>The Moon and the Son: An Imagined Conversation</option>
+                        <option value='173'>A Note of Triumph: The Golden Age of Norman Corwin</option>
+                        <option value='174'>Six Shooter</option>
+                        <option value='175'>Syriana</option>
+                        <option value='176'>Tsotsi</option>
+                        <option value='177'>Walk the Line</option>
+                        <option value='178'>Wallace &amp; Gromit: The Curse of the Were-Rabbit</option>
+                    </select><br/>
+                    <input type="radio" name="ajout" value="2004"/><label>2004 : </label>
+                    <select name = "2004">
+                        <option value='defaut'> -- </option>
+                        <option value='179'>The Aviator</option>
+                        <option value='180'>Million Dollar Baby</option>
+                        <option value='181'>The Incredibles</option>
+                        <option value='182'>Ray</option>
+                        <option value='183'>Born into Brothels: Calcutta's Red Light Kids</option>
+                        <option value='184'>Eternal Sunshine of the Spotless Mind</option>
+                        <option value='185'>Finding Neverland</option>
+                        <option value='186'>Lemony Snicket's A Series of Unfortunate Events</option>
+                        <option value='187'>Mighty Times: The Children's March</option>
+                        <option value='188'>The Motorcycle Diaries</option>
+                        <option value='189'>Ryan</option>
+                        <option value='190'>The Sea Inside</option>
+                        <option value='191'>Sideways</option>
+                        <option value='192'>Spider-Man 2</option>
+                        <option value='193'>Wasp</option>
+                    </select><br/>
+                    <input type="radio" name="ajout" value="2003"/><label>2003 : </label>
+                    <select name = "2003">
+                        <option value='defaut'> -- </option>
+                        <option value='194'>The Lord of the Rings: The Return of the King</option>
+                        <option value='195'>Master and Commander: The Far Side of the World</option>
+                        <option value='196'>Mystic River</option>
+                        <option value='197'>The Barbarian Invasions</option>
+                        <option value='198'>Chernobyl Heart</option>
+                        <option value='199'>Cold Mountain</option>
+                        <option value='200'>Finding Nemo</option>
+                        <option value='201'>Harvie Krumpet</option>
+                        <option value='202'>Lost in Translation</option>
+                        <option value='203'>Monster</option>
+                        <option value='204'>Two Soldiers</option>
+                    </select><br/>
+                    <input type="radio" name="ajout" value="2002"/><label>2002 : </label>
+                    <select name = "2002">
+                        <option value='defaut'> -- </option>
+                        <option value='205'>Chicago</option>
+                        <option value='206'>The Pianist</option>
+                        <option value='207'>Frida</option>
+                        <option value='208'>The Lord of the Rings: The Two Towers</option>
+                        <option value='209'>8 Mile</option>
+                        <option value='210'>Adaptation</option>
+                        <option value='211'>Bowling for Columbine</option>
+                        <option value='212'>The Chubbchubbs!</option>
+                        <option value='213'>The Fog of War</option>
+                        <option value='214'>The Hours</option>
+                        <option value='215'>Nowhere in Africa (Nirgendwo in Afrika)</option>
+                        <option value='216'>Road to Perdition</option>
+                        <option value='217'>Spirited Away</option>
+                        <option value='218'>Talk to Her (Hable con ella)</option>
+                        <option value='219'>This Charming Man (Der Er En Yndig Mand)</option>
+                        <option value='220'>Twin Towers</option>
+                    </select><br/>
+                    <input type="radio" name="ajout" value="2001"/><label>2001 : </label>
+                    <select name = "2001">
+                        <option value='defaut'> -- </option>
+                        <option value='221'>A Beautiful Mind</option>
+                        <option value='222'>The Lord of the Rings: The Fellowship of the Ring</option>
+                        <option value='223'>Black Hawk Down</option>
+                        <option value='224'>Moulin Rouge!</option>
+                        <option value='225'>The Accountant</option>
+                        <option value='226'>For the Birds</option>
+                        <option value='227'>Gosford Park</option>
+                        <option value='228'>Iris</option>
+                        <option value='229'>Monster's Ball</option>
+                        <option value='230'>Monsters, Inc.</option>
+                        <option value='231'>Murder on a Sunday Morning (Un coupable idéal)</option>
+                        <option value='232'>No Man's Land</option>
+                        <option value='233'>Pearl Harbor</option>
+                        <option value='234'>Shrek</option>
+                        <option value='235'>Thoth</option>
+                        <option value='236'>Training Day</option>
+                    </select><br/>
+                    <input type="radio" name="ajout" value="2000"/><label>2000 : </label>
+                    <select name = "2000">
+                        <option value='defaut'> -- </option>
+                        <option value='237'>Gladiator</option>
+                        <option value='238'>Crouching Tiger, Hidden Dragon</option>
+                        <option value='239'>Traffic</option>
+                        <option value='240'>Almost Famous</option>
+                        <option value='241'>Big Mama</option>
+                        <option value='242'>Dr. Seuss' How the Grinch Stole Christmas (How the Grinch Stole Christmas)</option>
+                        <option value='243'>Erin Brockovich</option>
+                        <option value='244'>Father and Daughter</option>
+                        <option value='245'>Into the Arms of Strangers: Stories of the Kindertransport</option>
+                        <option value='246'>Pollock</option>
+                        <option value='247'>Quiero ser (I want to be ...)</option>
+                        <option value='248'>U-571</option>
+                        <option value='249'>Wonder Boys</option>
+                    </select><br/><br/>
+                    <h3>Votre commentaire : </h3>
+                    <textarea rows="10" cols="100" name="ajout_com"></textarea><br/><br/>
+                    <!-- soumettre le contenu écrit dans textarea-->
+                    <div id="ajouter">
+                        <input type="submit" name="ajouter" value="Ajouter un commentaire"/>
+                    </div>                    
+                    <div id="afficher">
+                        <input type="submit" name="afficher" value="Visualiser tous les commentaires"/>
+                    </div>
+                    
+                </fieldset>
+                
+                <br/><br/>
+            </form>
+                <br/><br/>         
+                <p>
+                    <a href="http://validator.w3.org/check?uri=referer"><img
+                        src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+                </p>
+            <br/>
+            <div id="pied">
+                Yunbei ZHANG <span class="separateur"></span> Master2 IM<span class="separateur"></span>sadkitty0052@gmail.com
+            </div>  
+            
+            
+        </div>
+    </body>      
+</html>
